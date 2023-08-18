@@ -23,9 +23,9 @@
                       <h2 class="card-title">Triangle</h2>
                       <p>Area (A) =0.5 X b X h </p>
                       <p>
-                      <input type="text" class="border w-24 px-2 text-xl bg-gray-200 " placeholder="base" name="" id="triangle-base">
+                      <input type="number" class="border w-24 px-2 text-xl bg-gray-200 " placeholder="base" name="" id="triangle-base">
                       <span class="ml-2">cm</span>
-                      <input type="text" class="border w-24 px-2 text-xl ml-4 bg-gray-200 " placeholder="height" name="" id="triangle-height">
+                      <input type="number" class="border w-24 px-2 text-xl ml-4 bg-gray-200 " placeholder="height" name="" id="triangle-height">
                       <span class="ml-2">cm</span>
                       </p>
                       <p>Aria: <span id="triangle-ara">0</span>cm<sup>2</sup></p>
@@ -54,6 +54,44 @@
                       </div>
                     </div>
                   </div>
+                   <!-- parallelogram  -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>Area (A) = b X h </p>
+                      <p>
+                      <input type="text" class="border w-24 px-2 text-xl bg-gray-200 " placeholder="base" name="" id="parallelogram-base">
+                      <span class="ml-2">cm</span>
+                      <input type="text" class="border w-24 px-2 text-xl ml-4 bg-gray-200 " placeholder="height" name="" id="parallelogram-height">
+                      <span class="ml-2">cm</span>
+                      </p>
+                      <p>Aria: <span id="parallelogram-area">0</span>cm<sup>2</sup></p>
+
+                      <div class="card-actions">
+                        <button onclick="calculateParallelogramAra()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Ellipse  -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                  <figure><img src="./images/ellipse.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Ellipse</h2>
+                    <p>Area (A) = π ab </p>
+                    <p>
+                    <input type="text" class="border w-24 px-2 text-xl bg-gray-200 " placeholder="large" name="" id="ellipse-major-radius">
+                    <span class="ml-2">cm</span>
+                    <input type="text" class="border w-24 px-2 text-xl ml-4 bg-gray-200 " placeholder="short" name="" id="ellipse-mainor-radius">
+                    <span class="ml-2">cm</span>
+                    </p>
+                    <p>Aria: <span id="ellipse-area">0</span>cm<sup>2</sup></p>
+
+                    <div class="card-actions">
+                      <button onclick="calculateEllipseAra()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                  </div>
+                </div>
                   <!-- second card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
